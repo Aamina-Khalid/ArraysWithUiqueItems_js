@@ -12,11 +12,23 @@ Here's what our packing list looks like as a Set:
 
 
 const itemsToPack = new Set();
+
+
 itemsToPack.add("water bottle");
+
+
 itemsToPack.add("laptop");
+
+
 itemsToPack.add("headphones");
+
+
 itemsToPack.add("snacks");
+
+
 itemsToPack.add("book");
+
+
 itemsToPack.add("sunscreen");
 
 
@@ -37,9 +49,15 @@ Once a Set has been created, we can use the above methods to modify it. For exam
 
 
 if (!itemsToPack.has("water bottle")) {
+
  itemsToPack.add("water bottle");
-} else {
+ 
+}
+
+else {
+
  console.log("Water bottle is already on the list!");
+ 
 }
 
 
@@ -63,17 +81,28 @@ So what are the uses of Set then? Let's return to our packing list example. Once
 
 
 const backpack1.items = ["water bottle", "laptop"];
+
 const backpack2.items = [ "headphones", "snacks", "book"];
 
 
 itemsToPack.forEach(item => {
+
    if (backpack1.items.includes(item)) {
+   
        console.log(`${item} is packed in backpack 1`);
-   } else if (backpack2.items.includes(item)) {
+       
+   } 
+   
+   else if (backpack2.items.includes(item)) {
+   
        console.log(`${item} is packed in backpack 2`);
+       
    } else {
+   
        console.log(`${item} is not packed`);
+       
    }
+   
 });
 
 
